@@ -1,0 +1,25 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sda5 during installation
+UUID=e58a58d9-b7e0-48cf-8394-d12602e041e0 /               ext4    errors=remount-ro 0       1
+# /dos was on /dev/sda3 during installation
+UUID=76C22C95C22C5B9D /dos            ntfs    defaults,umask=007,gid=46 0       0
+# /home was on /dev/sda1 during installation
+UUID=67013bea-cb20-45e0-b8f9-77260cf438ef /home           ext4    defaults        0       2
+# /windows was on /dev/sda4 during installation
+UUID=84C044E1C044DB56 /windows        ntfs    defaults,umask=007,gid=46 0       0
+# swap was on /dev/sda6 during installation
+UUID=4bfb1b53-22d2-4dac-bded-51b678d2db53 none            swap    sw              0       0
+tmpfs /tmp tmpfs defaults,noatime,nosuid,nodev,mode=1777,size=512M 0 0
+#Montagem do HD Externo DELL para que os backups sejam feitos em segurança
+UUID=af64c9d0-208e-494a-a4c6-5a7af8d1fea5 /media/supervedovatto/DELL ext4 rw,nosuid,nodev,uhelper=udisks2 0 0
+#Montagem do HD Externo Scorpio para que os backups sejam feitos em segurança
+UUID=45b1c643-4aea-4b91-a0c5-9d1b63b607bc /media/supervedovatto/Scorpio ext4 rw,nosuid,nodev,uhelper=udisks2 0 0
+#Montagem de partições auxiliares
+UUID=7B46A1B777F3656C /media/supervedovatto/DELL-Windows auto nosuid,nodev,nofail 0 0
+UUID=0E3496870B1BBB19 /media/supervedovatto/Scorpio-Windows auto nosuid,nodev,nofail 0 0

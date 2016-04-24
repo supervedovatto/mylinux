@@ -1,0 +1,3 @@
+@hourly bash /home/supervedovatto/Documents/Programas/Shell/config/backup-schedule-hourly.sh
+@daily bash /home/supervedovatto/Documents/Programas/Shell/config/backup-schedule-daily.sh
+@weekly bash /home/supervedovatto/Documents/Programas/Shell/config/backup-schedule-weekly.sh
