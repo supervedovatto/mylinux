@@ -46,7 +46,7 @@ myscripts=$Shell/myscripts
 egnh=$ArtTes/EGNadarajahHaghighi
 
 #Diretórios de nível 5
-BackupManagerNewFiles=$config/BackupManagerNewFiles
+BackupManagerNewFiles=$config/backup_systems/bm_config
 repositorios=$config/repositorios
 
 # export programas=/home/supervedovatto/Documents/Programas/Shell

@@ -1,6 +1,6 @@
 #!/bin/bash
 #O primeiro comando inclui a pastados onde se localizam meus scripts pessois como uma das pastas onde as shell irão procurar por comandos
-source /home/supervedovatto/Documents/Programas/Shell/config/mymaindirs.sh
+source /home/supervedovatto/Documents/Programas/Shell/config/myvariables.sh
 
 # ATUALIZA VIM
 echo "Desinstalando todas as versões anteriores do vim *****************************************************************"

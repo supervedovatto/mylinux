@@ -20,15 +20,9 @@
 # set -o nounset                              # Treat unset variables as an error
 #Diretório temporário para armazenar as configurações pessoais do bash durante a instalação
 
-source /home/supervedovatto/Documents/Programas/Shell/config/mymaindirs.sh
+source /home/supervedovatto/Documents/Programas/Shell/config/myvariables.sh
 
-#Configura o git
-echo "Configura o git*****************************************************************"
-git config --global user.name "supervedovatto"
-git config --global user.email "supervedovatto@hotmail.com"
-git config --global core.editor gvim
-git config --global merge.tool gvimdiff
-git config --global user.signinkey "09pop0o9"
+bash gitcofig.sh
 
 bash_config=/tmp/bash_config
 if [ -d "$bash_config" ]; then

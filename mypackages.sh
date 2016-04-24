@@ -6,10 +6,11 @@ PURGES="abiword
 	gnome-games-data
 	gnome-games-extra-data
 	gnumeric
+	nano
 	pidgin
+	runit
 	sylpheed
 	thunderbird
-	runit
 	tomboy
 	unity-lens-files
 	zeitgeist
