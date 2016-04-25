@@ -13,8 +13,8 @@ if [ "$Release" == "jessie" ]; then
 fi
 
 if [ "$Release" == "trusty" ] || [ "$Release" == "xenial" ]; then
-    /usr/sbin/backup-manager -c $config/backup_systems/backup-manager-daily-local.conf
-    rsync --checksum --archive --delete --force --cvs-exclude $Documents $DROPBOX
-    rsync --checksum --archive --delete --force --cvs-exclude $Documents $DELL
+    /usr/sbin/backup-manager -c $config/backup_systems/bm_kompahat_daily_local.conf
+    # rsync --checksum --archive --delete --force --cvs-exclude $Documents $DROPBOX
+    # rsync --checksum --archive --delete --force --cvs-exclude $Documents $DELL
 fi
 

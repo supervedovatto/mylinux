@@ -13,3 +13,8 @@ bash $config/vim_config.sh
 
 # Essas configurações não foram eficazes
 # bash evince_config.sh
+
+if [ "$HOSTNAME" == "kompahat" ]; then
+	chown -R supervedovatto $DELLBackup
+	chown -R supervedovatto $SCORPIOBackup
+fi

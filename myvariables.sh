@@ -66,12 +66,15 @@ fi
 
 if [ "$HOSTNAME" == "kompahat" ]; then
 
-    DROPBOX=/media/supervedovatto/DELL/Dropbox
-    CALIBRE=$MyUSER/Calibre
-    DELL=/media/supervedovatto/DELL/Backup
+    DELL=/media/supervedovatto/DELL
 	VEDODISK=/media/supervedovatto/VEDODISK
+	SCORPIO=/media/supervedovatto/Scorpio
+
+    CALIBRE=$MyUSER/Calibre
+    DROPBOX=$DELL/Dropbox
+    DELLBackup=$DELL/Backup
+    SCORPIOBackup=$SCORPIO/Backup
 
 fi
-
 # Outros variáveis
 Release=$(lsb_release -sc) #Identifica a versão do sistema operacional
