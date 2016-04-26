@@ -38,12 +38,12 @@ Learning=$Programas/Learning
 ModReg=$UFPE/ModelosRegressão
 Shell=$Programas/Shell
 TeoAss=$UFPE/TeoriaAssintótica
-ArtTes=$UFPE/ArtigosTese
+MeuArt=$UFPE/MeusArtigos
 
 #Diretórios de nível 4
 config=$Shell/config
 myscripts=$Shell/myscripts
-egnh=$ArtTes/EGNadarajahHaghighi
+egnh=$MeuArt/EGNadarajahHaghighi
 
 #Diretórios de nível 5
 BackupManagerNewFiles=$config/backup_systems/bm_config
