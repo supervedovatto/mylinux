@@ -21,6 +21,6 @@
 # 
 # m h  dom mon dow   command
 
-@hourly bash /home/supervedovatto/Documents/Programas/Shell/config/backup_systems/bs-hourly.sh
-@daily bash /home/supervedovatto/Documents/Programas/Shell/config/backup_systems/bs-daily.sh
-@weekly bash /home/supervedovatto/Documents/Programas/Shell/config/backup_systems/bs-weekly.sh
+@hourly bash /home/supervedovatto/Documents/Programas/Shell/config/backup_systems/bs_hourly.sh
+@daily bash /home/supervedovatto/Documents/Programas/Shell/config/backup_systems/bs_daily.sh
+@weekly bash /home/supervedovatto/Documents/Programas/Shell/config/backup_systems/bs_weekly.sh

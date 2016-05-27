@@ -37,6 +37,7 @@ AnaSob=$UFPE/AnáliseSobrevivência
 Learning=$Programas/Learning
 ModReg=$UFPE/ModelosRegressão
 Shell=$Programas/Shell
+Vim=$Programas/Vim
 TeoAss=$UFPE/TeoriaAssintótica
 MeuArt=$UFPE/MeusArtigos
 
@@ -44,9 +45,14 @@ MeuArt=$UFPE/MeusArtigos
 config=$Shell/config
 myscripts=$Shell/myscripts
 egnh=$MeuArt/EGNadarajahHaghighi
+CR=$MeuArt/ProjetoCR
+projeto1=$AnaMul/Projeto1
+projeto2=$AnaMul/Projeto2
+projeto3=$AnaMul/Projeto3
 
 #Diretórios de nível 5
 BackupManagerNewFiles=$config/backup_systems/bm_config
+ECR=$CR/ECR
 repositorios=$config/repositorios
 
 # export programas=/home/supervedovatto/Documents/Programas/Shell
@@ -56,22 +62,23 @@ repositorios=$config/repositorios
 # export MATHEMATICA_USERBASE=/home/supervedovatto/Documents/Programas/Mathematica
 # export MATHEMATICA_BASE=/home/supervedovatto/Documents/Programas/Mathematica
 
-if [ "$HOSTNAME" == "komaine" ]; then
+VEDODISK=/media/supervedovatto/VEDODISK
+
+if [ "$HOSTNAME" == "kompahat" ]; then
     
-    DROPBOX=$MyUSER/Dropbox
+    Dropbox=$MyUSER/Dropbox
+    GoogleDrive='$MyUSER/Google\ Drive'
     CALIBRE=$MyUSER/Dropbox/Calibre
-	VEDODISK=/media/supervedovatto/VEDODISK
 
 fi
 
-if [ "$HOSTNAME" == "kompahat" ]; then
+if [ "$HOSTNAME" == "komaine" ]; then
 
     DELL=/media/supervedovatto/DELL
-	VEDODISK=/media/supervedovatto/VEDODISK
 	SCORPIO=/media/supervedovatto/Scorpio
 
     CALIBRE=$MyUSER/Calibre
-    DROPBOX=$DELL/Dropbox
+    Dropbox=$DELL/Dropbox
     DELLBackup=$DELL/Backup
     SCORPIOBackup=$SCORPIO/Backup
 

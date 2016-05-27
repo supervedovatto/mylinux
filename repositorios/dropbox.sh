@@ -1,6 +1,6 @@
 #!/bin/bash
 #http://www.ubuntuupdates.org/ppa/dropbox
-if [ "$Release" == "trusty" ]; then
+if [ "$Release" == "trusty" ] || [ "$Release" == "freya" ]; then
 	sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ trusty main" >> /etc/apt/sources.list.d/dropbox.list'
 fi
 if [ "$Release" == "xenial" ]; then

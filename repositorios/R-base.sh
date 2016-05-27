@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ "$Release" == "trusty" ]; then
+if [ "$Release" == "trusty" ] || [ "$Release" == "freya" ]; then
 	echo "deb http://cran.cnr.berkeley.edu/bin/linux/ubuntu/ trusty/" | tee -a /etc/apt/sources.list
 	echo "deb-src http://cran.cnr.berkeley.edu/bin/linux/ubuntu/ trusty/"  | tee -a /etc/apt/sources.list
 fi

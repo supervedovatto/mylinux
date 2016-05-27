@@ -47,6 +47,9 @@ git init $MyUSER
 chown -R supervedovatto $MyUSER/.git
 
 cd $MyUSER
-git remote add origin https://bitbucket.org/supervedovatto/bash_config
+# Using https protocol
+# git remote add origin https://bitbucket.org/supervedovatto/bash_config.git
+# Using ssh protocol
+git remote add origin ssh://git@bitbucket.org/supervedovatto/bash-config.git
 git config credential.helper store
 git pull origin master

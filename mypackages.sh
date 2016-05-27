@@ -20,9 +20,8 @@ PURGES="abiword
 for i in $PURGES;
 do
 	echo "--------------------------------------------- Unninstalling" $i
-	sudo apt-get purge $i -y
+	sudo apt-get purge $i -y #|| echo "Falha ao desinstalar " $i && exit
 done
-sudo apt-get autoremove -y
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
@@ -79,7 +78,6 @@ LinguagemPython=(
 Others=(
 	backup-manager
 	bum
-    evince
 	calibre
 	codeblocks
 	curl
@@ -107,10 +105,17 @@ Others=(
 	deluge
 );
 # }}}
+# Latex=(
+# 	texlive-full
+# 	abntex
+# 	latex-beamer
+# 	latexdraw
+# 	texstudio
+# 	writer2latex
+# );
 Latex=(
 	texlive
 	texlive-base
-	texlive-bibtex-extra
 	texlive-binaries
 	texlive-extra-utils
 	texlive-fonts-extra
@@ -141,7 +146,7 @@ Latex=(
 	texlive-publishers
 	texlive-science
 	texlive-xetex
-	biblatex
+	texlive-bibtex-extra
 	biber
 	abntex
 	latex-beamer
@@ -161,19 +166,20 @@ FullList=(
 	"${LinguagemOctave[@]}"
 	"${LinguagemPython[@]}"
 	"${Others[@]}"
-	"${KDE[@]}"
 	"${Latex[@]}"
 );
 for i in "${FullList[@]}";
 do
 	echo "--------------------------------------------- Installing" $i
-	sudo apt-get install $i -y
+	sudo apt-get install $i -y #|| echo "Falha ao Instalar " $i && exit
 done
 #Instalação de Pacotes da linguagem Python
-pip install ipython #IDE para python
-pip install psutil #Necessária para compilar latex com o pacote ATP do vim
-pip install jedi #autocomplete for python
-pip install jupyter #Browser IDE for python
-pip install jupyter-themer #Temas para jupyter
+pip install ipython        #|| echo "Falha ao Instalar" && exit # IDE para python
+pip install psutil         #|| echo "Falha ao Instalar" && exit # Necessária para compilar latex com o pacote ATP do vim
+pip install jedi           #|| echo "Falha ao Instalar" && exit # autocomplete for python
+pip install jupyter        #|| echo "Falha ao Instalar" && exit # Browser IDE for python
+pip install jupyter-themer #|| echo "Falha ao Instalar" && exit # Temas para jupyter
 sudo bash $config/gitconfig.sh
 sudo bash $bin/config.sh
+
+sudo apt-get autoremove -y

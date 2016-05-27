@@ -10,13 +10,13 @@ wget https://download1.rstudio.org/rstudio-0.99.689-amd64.deb  -O /tmp/install-r
 
 #Atom
 #https://atom.io/
-sudo dpkg -r atom
-wget https://atom.io/download/deb -O /tmp/install-atom.deb
+#sudo dpkg -r atom
+#wget https://atom.io/download/deb -O /tmp/install-atom.deb
 
 #Ox Edit 7.10
 #http://www.doornik.com/download/oxmetrics7/Ox_Console/
-sudo dpkg -r oxcons
-wget http://www.doornik.com/download/oxmetrics7/Ox_Console/oxcons_7.10-0_amd64.deb  -O /tmp/install-oxedit7.deb
+#sudo dpkg -r oxcons
+#wget http://www.doornik.com/download/oxmetrics7/Ox_Console/oxcons_7.10-0_amd64.deb  -O /tmp/install-oxedit7.deb
 
 #Instala todos os pacotes baixados
 sudo dpkg -i /tmp/*.deb

@@ -7,12 +7,15 @@
 
 source /home/supervedovatto/Documents/Programas/Shell/config/myvariables.sh
 
+test -x /usr/sbin/backup-manager || exit 0
+
 if [ "$Release" == "trusty" ] || [ "$Release" == "xenial" ]; then
-    # rsync --verbose --checksum --archive --delete --force --cvs-exclude $Documents/ /windows/Documents\ and\ Settings/thiag/Documents/
-fi
+    rsync --checksum --chmod=777 --delete --force --recursive $egnh/ $SharedMEGA/Thiago_para_Walmir/EGNH/
+    cp $Artigos/bibliografiageral.bib $SharedMEGA/Thiago_para_Walmir/EGNH/bibliografiageral.bib
+    /usr/sbin/backup-manager -c $config/backup_systems/bm_kompahat.conf
 
 if [ "$Release" == "jessie" ]; then
-    /usr/sbin/backup-manager -c $config/backup_systems/bm_kompahat_daily_local.conf
+	/usr/sbin/backup-manager -c $config/backup_systems/bm_komaine.conf
     rsync --checksum --archive --delete --force --cvs-exclude $Documents $DROPBOX
     rsync --checksum --archive --delete --force --cvs-exclude $Documents $DELL
 fi
