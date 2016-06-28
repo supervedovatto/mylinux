@@ -48,8 +48,8 @@ myscripts=$Shell/myscripts
 EGNH=$MeuArt/EGNadarajahHaghighi
 CR=$MeuArt/ProjetoCR
 Expancoes=$MeuArt/Expancoes
-# projeto1=$AnaMul/Projeto1
-# projeto2=$AnaMul/Projeto2
+#projeto1=$AnaMul/Projeto1
+#projeto2=$AnaMul/Projeto2
 #projeto3=$AnaMul/Projeto3
 projeto4=$AnaMul/Projeto4
 
