@@ -23,6 +23,7 @@ MyUSER=/home/supervedovatto
 #Outros Diretórios
 #Diretórios de nível 1
 Documents=$MyUSER/Documents
+Downloads=$MyUSER/Downloads
 Pictures=$MyUSER/Pictures
 SharedMEGA=$MyUSER/SharedMEGA
 
@@ -32,23 +33,25 @@ Programas=$Documents/Programas
 UFPE=$Documents/UFPE
 
 #Diretórios de nível 3
-AnaMul=$UFPE/AnáliseMultivariada
-AnaSob=$UFPE/AnáliseSobrevivência
+AnaMul=$UFPE/Análise_Multivariada
+AnaSob=$UFPE/Análise_de_Sobrevivência
 Learning=$Programas/Learning
-ModReg=$UFPE/ModelosRegressão
+ModReg=$UFPE/Modelos_de_Regressão
 Shell=$Programas/Shell
 Vim=$Programas/Vim
-TeoAss=$UFPE/TeoriaAssintótica
-MeuArt=$UFPE/MeusArtigos
+TeoAss=$UFPE/Teoria_Assintótica
+MeuArt=$UFPE/Meus_Artigos
 
 #Diretórios de nível 4
 config=$Shell/config
 myscripts=$Shell/myscripts
-egnh=$MeuArt/EGNadarajahHaghighi
+EGNH=$MeuArt/EGNadarajahHaghighi
 CR=$MeuArt/ProjetoCR
-projeto1=$AnaMul/Projeto1
-projeto2=$AnaMul/Projeto2
-projeto3=$AnaMul/Projeto3
+Expancoes=$MeuArt/Expancoes
+# projeto1=$AnaMul/Projeto1
+# projeto2=$AnaMul/Projeto2
+#projeto3=$AnaMul/Projeto3
+projeto4=$AnaMul/Projeto4
 
 #Diretórios de nível 5
 BackupManagerNewFiles=$config/backup_systems/bm_config

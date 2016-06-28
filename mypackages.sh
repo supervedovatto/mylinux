@@ -44,6 +44,7 @@ Bibliotecas=(
 	python-dev
 	ruby-dev
     libssl-dev
+    qt5-default
 );
 Compactadores=(	
 	lzma
@@ -80,6 +81,7 @@ Others=(
 	bum
 	calibre
 	codeblocks
+    smartmontools
 	curl
 	default-jre
 	figlet
@@ -98,6 +100,7 @@ Others=(
     tmux
     terminator
     wmctrl
+    par
 	shotwell
 	checkinstall
 	zathura
