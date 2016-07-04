@@ -26,7 +26,7 @@ sudo apt-get install r-recommended -y
 sudo apt-get install r-cran-? -y
 sudo apt-get install libatlas3-base -y #Fornece melhor desempenho nas operações com matrizes no R
 sudo apt-get install libopenblas-base -y #Fornece melhor desempenho em operações envolvendo algebra linear no R
-Rscript /home/supervedovatto/Documents/Programas/R/Pacotes.r #Instala a lista de pacotes que uso frequentemente no R
+Rscript /home/supervedovatto/Documents/Programas/R/mylibraries.R #Instala a lista de pacotes que uso frequentemente no R
 echo "R-BASE INSTALADO"
 # sudo apt-get install rstudio -y
 # echo "RSTUDIO INSTALADO"

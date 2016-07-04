@@ -23,4 +23,5 @@
 
 @hourly bash /home/supervedovatto/Documents/Programas/Shell/config/backup_systems/bs_hourly.sh
 @daily bash /home/supervedovatto/Documents/Programas/Shell/config/backup_systems/bs_daily.sh
+@daily bash /home/supervedovatto/Documents/Programas/Shell/myscripts/OrganizaArtigos.sh
 @weekly bash /home/supervedovatto/Documents/Programas/Shell/config/backup_systems/bs_weekly.sh

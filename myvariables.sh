@@ -50,8 +50,9 @@ CR=$MeuArt/ProjetoCR
 Expancoes=$MeuArt/Expancoes
 #projeto1=$AnaMul/Projeto1
 #projeto2=$AnaMul/Projeto2
-#projeto3=$AnaMul/Projeto3
+projeto3=$AnaMul/Projeto3
 projeto4=$AnaMul/Projeto4
+AISL=$AnaMul/An_Introduction_to_Statistical_Learning
 
 #Diretórios de nível 5
 BackupManagerNewFiles=$config/backup_systems/bm_config
