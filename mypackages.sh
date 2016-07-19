@@ -99,6 +99,7 @@ Others=(
     build-essential
     tmux
     terminator
+    htop
     wmctrl
     par
 	shotwell

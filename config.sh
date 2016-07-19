@@ -18,3 +18,8 @@ if [ "$HOSTNAME" == "kompahat" ]; then
 	chown -R supervedovatto $DELLBackup
 	chown -R supervedovatto $SCORPIOBackup
 fi
+
+#Pequeno script para que seja possível mover uma janela entre diferentes
+#monitores
+cp $myscripts/move-to-next-monitor.sh /usr/bin/move-to-next-monitor
+chmod +x /usr/bin/move-to-next-monitor
