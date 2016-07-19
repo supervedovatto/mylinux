@@ -101,6 +101,7 @@ Others=(
     terminator
     htop
     wmctrl
+    xdotool
     par
 	shotwell
 	checkinstall
